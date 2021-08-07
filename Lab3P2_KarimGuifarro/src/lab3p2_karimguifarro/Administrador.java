@@ -5,10 +5,12 @@ package lab3p2_karimguifarro;
 public class Administrador extends user{
     private int exp;
 
-    public Administrador(int exp, String user, String password, String nombre, String apellido, String ID, int cargo, int Salario) {
-        super(user, password, nombre, apellido, ID, cargo, Salario);
+    public Administrador(String user, String pass,String nombre, String apellido, String ID, int cargo, int Salario,int exp) {
+        super(nombre, apellido, ID, cargo, Salario, user, pass);
         this.exp = exp;
     }
+
+   
 
     public int getExp() {
         return exp;

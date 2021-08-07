@@ -1,13 +1,12 @@
-
 package lab3p2_karimguifarro;
 
+public class Programadores extends user {
 
-public class Programadores extends user{
     private String lenguaje;
     private String horario;
 
-    public Programadores(String lenguaje, String horario, String user, String password, String nombre, String apellido, String ID, int cargo, int Salario) {
-        super(user, password, nombre, apellido, ID, cargo, Salario);
+    public Programadores(String user, String pass, String nombre, String apellido, String ID, int cargo, int Salario, String lenguaje, String horario) {
+        super(nombre, apellido, ID, cargo, Salario, user, pass);
         this.lenguaje = lenguaje;
         this.horario = horario;
     }
@@ -32,5 +31,5 @@ public class Programadores extends user{
     public String toString() {
         return "Programadores{" + "lenguaje=" + lenguaje + ", horario=" + horario + '}';
     }
-    
+
 }

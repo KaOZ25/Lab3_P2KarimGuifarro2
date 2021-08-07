@@ -1,9 +1,7 @@
 
 package lab3p2_karimguifarro;
 
-public class user {
-   private String user;
-   private String password;
+public class user extends login{
    private String nombre;
    private String apellido;
    private String ID;
@@ -13,38 +11,20 @@ public class user {
     public user() {
     }
 
-    public user(String user, String password, String nombre, String apellido, String ID) {
-        this.user = user;
-        this.password = password;
+    public user(String nombre, String apellido, String ID, String user, String pass) {
+        super(user, pass);
         this.nombre = nombre;
         this.apellido = apellido;
         this.ID = ID;
     }
 
-    public user(String user, String password, String nombre, String apellido, String ID, int cargo, int Salario) {
-        this.user = user;
-        this.password = password;
+    public user(String nombre, String apellido, String ID, int cargo, int Salario, String user, String pass) {
+        super(user, pass);
         this.nombre = nombre;
         this.apellido = apellido;
         this.ID = ID;
         this.cargo = cargo;
         this.Salario = Salario;
-    }
-
-    public String getUser() {
-        return user;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getNombre() {
@@ -89,7 +69,7 @@ public class user {
 
     @Override
     public String toString() {
-        return "user{" + "user=" + user + ", password=" + password + ", nombre=" + nombre + ", apellido=" + apellido + ", ID=" + ID + ", cargo=" + cargo + ", Salario=" + Salario + '}';
+        return "user{" + "nombre=" + nombre + ", apellido=" + apellido + ", ID=" + ID + ", cargo=" + cargo + ", Salario=" + Salario + '}';
     }
 
 

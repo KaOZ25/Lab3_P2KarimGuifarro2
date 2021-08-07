@@ -10,9 +10,9 @@ public class Motoristas extends user{
 
     public Motoristas() {
     }
-    
-    public Motoristas(int comisiones, String transporte, int capacidad, String user, String password, String nombre, String apellido, String ID, int cargo, int Salario) {
-        super(user, password, nombre, apellido, ID, cargo, Salario);
+
+    public Motoristas(int comisiones, String transporte, int capacidad, String nombre, String apellido, String ID, int cargo, int Salario, String user, String pass) {
+        super(nombre, apellido, ID, cargo, Salario, user, pass);
         this.comisiones = comisiones;
         this.transporte = transporte;
         this.capacidad = capacidad;

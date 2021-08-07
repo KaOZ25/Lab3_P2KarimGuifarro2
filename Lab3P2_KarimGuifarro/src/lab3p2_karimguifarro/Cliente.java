@@ -12,8 +12,8 @@ package lab3p2_karimguifarro;
 public class Cliente extends user{
 private int cant_ped;
 
-    public Cliente(int cant_ped, String user, String password, String nombre, String apellido, String ID) {
-        super(user, password, nombre, apellido, ID);
+    public Cliente(String user, String pass,String nombre, String apellido, String ID,int cant_ped) {
+        super(nombre, apellido, ID, user, pass);
         this.cant_ped = cant_ped;
     }
 
